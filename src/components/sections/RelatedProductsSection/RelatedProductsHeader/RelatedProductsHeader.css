@@ -1,0 +1,59 @@
+.related-header {
+  width: 100%;
+  max-width: 1280px;
+  margin: 100px auto 0px;
+}
+
+.related-title {
+  display: flex;
+  align-items: center;
+  height: 45px;
+}
+
+.related-title h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #3442b5;
+  white-space: nowrap;
+}
+
+.related-title .line {
+  flex: 1;
+  height: 1px;
+  background-color: #dedede;
+  margin: 34px;
+  width: 360px;
+}
+
+.related-tabs {
+  display: flex;
+  border: 1px solid #bdbdbd;
+  overflow: hidden;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px 0;
+  background: #ffffff;
+  border: none;
+  border-right: 1px solid #bdbdbd;
+  font-size: 16px;
+  color: #3b3b3b;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.tab:last-child {
+  border-right: none;
+}
+
+.tab:hover {
+  color: #3442b5;
+  font-weight: bold;
+}
+
+.tab.active {
+  color: #3442b5;
+  font-weight: bold;
+}

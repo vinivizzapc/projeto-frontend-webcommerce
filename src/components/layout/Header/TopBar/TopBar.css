@@ -1,0 +1,31 @@
+.topbar {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  gap: 119px;
+  font-size: 13px;
+  color: gray;
+  height: 32px;
+}
+
+.topbar-item {
+  display: flex;
+  align-items: center;
+}
+
+.topbar-item svg {
+  margin-right: 8px;
+  font-size: 20px;
+  stroke: #9f9f9f;
+  stroke-width: 2px;
+}
+
+.topbar-item strong {
+  color: #3019b2;
+  font-weight: 500;
+}
+
+strong {
+  color: #3019b2;
+  font-weight: 500;
+}
