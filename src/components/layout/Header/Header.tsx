@@ -1,8 +1,8 @@
 import { Component } from "react";
 
-import TopBar from "./TopBar/TopBar";
-import MainHeader from "./MainHeader/MainHeader";
-import NavbarCategorias from "./NavbarCategorias/NavbarCategorias";
+import TopBar from "./TopBar";
+import MainHeader from "./MainHeader";
+import NavbarCategorias from "./NavbarCategorias";
 import "./Header.css";
 
 class Header extends Component {

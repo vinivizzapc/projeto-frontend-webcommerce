@@ -1,8 +1,9 @@
 import { Component } from "react";
 import "./ProductShowcase.css";
-import ProductCarousel from "../ProductCarousel/ProductCarousel";
-import ProductCard from "../ProductCard/ProductCard";
+import ProductCarousel from "../ProductCarousel";
+import ProductCard from "../ProductCard";
 import type { Product } from "../../../types/product";
+import Popup from "../../popup";
 
 interface Props {
   title: string;
@@ -10,9 +11,26 @@ interface Props {
   products: Product[];
 }
 
-class ProductShowcase extends Component<Props> {
+interface State {
+  selectedProduct: Product | null;
+}
+
+class ProductShowcase extends Component<Props, State> {
+  state: State = {
+    selectedProduct: null,
+  };
+
+  handleBuy = (product: Product) => {
+    this.setState({ selectedProduct: product });
+  };
+
+  closePopup = () => {
+    this.setState({ selectedProduct: null });
+  };
+
   render() {
     const { title, subtitle, products } = this.props;
+    const { selectedProduct } = this.state;
 
     return (
       <section className="product-showcase">
@@ -30,9 +48,26 @@ class ProductShowcase extends Component<Props> {
 
         <ProductCarousel>
           {products.map((product) => (
-            <ProductCard key={product.productName} product={product} />
+            <ProductCard
+              key={product.productName}
+              product={product}
+              onBuy={this.handleBuy}
+            />
           ))}
         </ProductCarousel>
+
+        {selectedProduct && (
+          <Popup
+            isOpen={true}
+            onClose={this.closePopup}
+            title={selectedProduct.productName}
+            price={(selectedProduct.price / 100).toLocaleString("pt-BR", {
+              style: "currency",
+              currency: "BRL",
+            })}
+            image={selectedProduct.photo}
+          />
+        )}
       </section>
     );
   }

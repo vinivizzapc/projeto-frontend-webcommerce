@@ -4,11 +4,12 @@ import type { Product } from "../../../types/product";
 
 interface Props {
   product: Product;
+  onBuy: (product: Product) => void;
 }
 
 class ProductCard extends Component<Props> {
   render() {
-    const { product } = this.props;
+    const { product, onBuy } = this.props;
 
     if (!product) return null;
 
@@ -31,7 +32,9 @@ class ProductCard extends Component<Props> {
 
         <span className="free-shipping">Frete grátis</span>
 
-        <button className="buy-button">COMPRAR</button>
+        <button className="buy-button" onClick={() => onBuy(product)}>
+          COMPRAR
+        </button>
       </div>
     );
   }

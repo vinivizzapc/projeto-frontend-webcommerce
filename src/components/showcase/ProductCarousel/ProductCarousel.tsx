@@ -1,5 +1,4 @@
 import { Component, createRef } from "react";
-import ProductCard from "../ProductCard/ProductCard";
 import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi";
 import "./ProductCarousel.css";
 

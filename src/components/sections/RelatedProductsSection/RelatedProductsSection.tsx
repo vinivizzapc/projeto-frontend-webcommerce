@@ -1,9 +1,9 @@
 import { Component } from "react";
 import RelatedProductsHeader from "./RelatedProductsHeader";
-import "./RelatedProductsSection.css";
 import ProductCarousel from "../../showcase/ProductCarousel";
-import type { Product } from "../../../types/product";
 import ProductCard from "../../showcase/ProductCard";
+import type { Product } from "../../../types/product";
+import "./RelatedProductsSection.css";
 
 interface Props {
   products: Product[];
