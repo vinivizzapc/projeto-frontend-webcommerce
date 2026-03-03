@@ -48,15 +48,7 @@ class ProductShowcase extends Component<Props, State> {
           )}
         </div>
 
-        <ProductCarousel>
-          {products.map((product) => (
-            <ProductCard
-              key={product.productName}
-              product={product}
-              onBuy={this.handleBuy}
-            />
-          ))}
-        </ProductCarousel>
+        <ProductCarousel listProduct={products} handleBuy={this.handleBuy} />
 
         {selectedProduct && (
           <Popup

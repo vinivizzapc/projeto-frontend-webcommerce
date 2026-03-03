@@ -13,8 +13,9 @@
 }
 
 .product-showcase-header h2 {
+  font-family: "Poppins", sans-serif;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: bold;
   color: #3442b5;
   white-space: nowrap;
 }
@@ -23,6 +24,7 @@
   flex: 1;
   height: 1px;
   background-color: #dedede;
+  max-width: 360px;
 }
 
 .product-showcase-subtitle {

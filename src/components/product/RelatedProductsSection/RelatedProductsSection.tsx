@@ -1,7 +1,6 @@
 import { Component } from "react";
 import RelatedProductsHeader from "./RelatedProductsHeader";
 import ProductCarousel from "../../product/ProductCarousel";
-import ProductCard from "../../product/ProductCard";
 import type { Product } from "../../../types/product";
 import "./RelatedProductsSection.scss";
 import Popup from "../../ui/Popup";
@@ -44,15 +43,7 @@ class RelatedProductsSection extends Component<Props, State> {
           onChangeTab={this.handleChangeTab}
         />
 
-        <ProductCarousel>
-          {products.map((product) => (
-            <ProductCard
-              key={product.productName}
-              product={product}
-              onBuy={this.handleBuy}
-            />
-          ))}
-        </ProductCarousel>
+        <ProductCarousel listProduct={products} handleBuy={this.handleBuy} />
 
         {selectedProduct && (
           <Popup

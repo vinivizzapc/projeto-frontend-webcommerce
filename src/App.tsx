@@ -24,9 +24,9 @@ function App() {
 
   return (
     <>
-      <Header />
-
       <main className="container">
+        <Header />
+
         <HeroBanner />
         <CategoriesSection />
         <RelatedProductsSection products={products} />
@@ -46,9 +46,9 @@ function App() {
           subtitle="Ver todos"
           products={products}
         />
-      </main>
 
-      <Footer />
+        <Footer />
+      </main>
     </>
   );
 }
