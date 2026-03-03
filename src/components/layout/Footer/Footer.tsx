@@ -1,11 +1,9 @@
 import { Component } from "react";
 
 import logo from "../../../assets/images/logo.png";
-import {
-  PiInstagramLogo,
-  PiFacebookLogo,
-  PiLinkedinLogo,
-} from "react-icons/pi";
+import { PiInstagramLogo } from "react-icons/pi";
+import FacebookIcon from "../../../assets/icons/facebook.svg";
+import LinkedinIcon from "../../../assets/icons/linkedin.svg";
 
 import "./Footer.scss";
 
@@ -41,13 +39,17 @@ class Footer extends Component {
         <div className="footer-content">
           <div className="footer-container">
             <div className="footer-left">
-              <img src={logo} alt="Econverse" />
+              <img className="footer-logo" src={logo} alt="Econverse" />
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
               <div className="socials">
                 <PiInstagramLogo />
-                <PiFacebookLogo />
-                <PiLinkedinLogo />
+                <img src={FacebookIcon} alt="Facebook" />
+                <img
+                  className="logo-linkedin"
+                  src={LinkedinIcon}
+                  alt="Linkedin"
+                />
               </div>
             </div>
 
@@ -79,7 +81,7 @@ class Footer extends Component {
         </div>
 
         <div className="footer-bottom">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </footer>
     );

@@ -24,26 +24,31 @@ function App() {
 
   return (
     <>
-      <div className="container">
-        <Header />
+      <Header />
+
+      <main className="container">
         <HeroBanner />
         <CategoriesSection />
         <RelatedProductsSection products={products} />
         <PartnersSection />
+
         <ProductShowcase
           title="Produtos relacionados"
           subtitle="Ver todos"
           products={products}
         />
+
         <PartnersSection />
         <BrandsSection />
+
         <ProductShowcase
           title="Produtos relacionados"
           subtitle="Ver todos"
           products={products}
         />
-        <Footer />
-      </div>
+      </main>
+
+      <Footer />
     </>
   );
 }

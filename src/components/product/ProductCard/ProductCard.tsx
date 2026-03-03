@@ -7,6 +7,8 @@ interface Props {
   onBuy: (product: Product) => void;
 }
 
+const INSTALLMENTS = 2;
+
 class ProductCard extends Component<Props> {
   handleClick = () => {
     const { product, onBuy } = this.props;
@@ -18,10 +20,15 @@ class ProductCard extends Component<Props> {
 
     if (!product) return null;
 
-    const formattedPrice = (product.price / 100).toLocaleString("pt-BR", {
-      style: "currency",
-      currency: "BRL",
-    });
+    const formatCurrency = (value: number) =>
+      new Intl.NumberFormat("pt-BR", {
+        style: "currency",
+        currency: "BRL",
+      }).format(value / 100);
+
+    const formattedPrice = formatCurrency(product.price);
+
+    const formattedOldPrice = formatCurrency(product.price * 1.1);
 
     return (
       <div
@@ -38,7 +45,18 @@ class ProductCard extends Component<Props> {
 
         <p className="product-title">{product.descriptionShort}</p>
 
+        <span className="old-price">{formattedOldPrice}</span>
+
         <h2 className="price">{formattedPrice}</h2>
+
+        <span className="installments">
+          ou {INSTALLMENTS}x de{" "}
+          {(product.price / INSTALLMENTS / 100).toLocaleString("pt-BR", {
+            style: "currency",
+            currency: "BRL",
+          })}{" "}
+          sem juros
+        </span>
 
         <span className="free-shipping">Frete grátis</span>
 

@@ -30,6 +30,27 @@
   text-align: justify;
 }
 
+.old-price {
+  font-size: 16px;
+  color: #808080;
+  text-decoration: line-through;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+.installments {
+  font-size: 12px;
+  color: #3f3f40;
+  display: block;
+  margin-bottom: 8px;
+}
+
 .free-shipping {
   display: block;
   text-align: justify;
