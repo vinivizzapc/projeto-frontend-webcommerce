@@ -118,28 +118,6 @@ yarn preview
 
 ---
 
-# 🧪 Rodando Testes
-
-Caso o projeto utilize Vitest ou Jest:
-
-```bash
-npm run test
-```
-
-ou
-
-```bash
-yarn test
-```
-
-Para rodar em modo watch:
-
-```bash
-npm run test:watch
-```
-
----
-
 # 📁 Estrutura do Projeto
 
 ```
