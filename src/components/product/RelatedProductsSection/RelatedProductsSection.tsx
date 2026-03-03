@@ -1,7 +1,7 @@
 import { Component } from "react";
 import RelatedProductsHeader from "./RelatedProductsHeader";
-import ProductCarousel from "../../showcase/ProductCarousel";
-import ProductCard from "../../showcase/ProductCard";
+import ProductCarousel from "../../product/ProductCarousel";
+import ProductCard from "../../product/ProductCard";
 import type { Product } from "../../../types/product";
 import "./RelatedProductsSection.css";
 

@@ -3,7 +3,7 @@ import "./ProductShowcase.css";
 import ProductCarousel from "../ProductCarousel";
 import ProductCard from "../ProductCard";
 import type { Product } from "../../../types/product";
-import Popup from "../../popup";
+import Popup from "../../ui/Popup";
 
 interface Props {
   title: string;
