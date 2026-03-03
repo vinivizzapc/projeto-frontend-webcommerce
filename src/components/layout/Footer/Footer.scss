@@ -24,6 +24,9 @@
 .newsletter-left {
   width: 515px;
   height: 82px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .newsletter-left h3 {

@@ -1,24 +1,18 @@
 .navbar-categorias {
-  width: 100%;
   background: #fff;
   height: 40px;
 }
 
 .navbar-categorias .header-container {
-  max-width: 1160px;
-  padding: 10px 24px;
-  display: flex;
-  justify-content: center;
-  gap: 91px;
+  justify-content: space-evenly;
+  height: 100%;
 }
 
 .navbar-categorias a {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
-  line-height: 18px;
-  font-weight: 400;
-  letter-spacing: 0;
-  color: #555;
+  font-weight: 500;
+  color: #9f9f9f;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -36,10 +30,13 @@
 .navbar-categorias a.assinatura {
   display: flex;
   align-items: center;
-  gap: 6px;
+  width: 108px;
+  gap: 8px;
 }
 
 .navbar-categorias a.assinatura svg {
   font-size: 20px;
   color: #9f9f9f;
+  position: relative;
+  top: -1px;
 }

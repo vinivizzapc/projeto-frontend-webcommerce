@@ -1,75 +1,189 @@
-# React + TypeScript + Vite
+# 📦 Projeto E-commerce (React + TypeScript + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação front-end desenvolvida com **React**, **TypeScript** e **Vite**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias Utilizadas
 
-## React Compiler
+- React
+- TypeScript
+- Vite
+- CSS Modules / CSS puro
+- ESLint
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+# 🔧 Pré-requisitos
 
-## Expanding the ESLint configuration
+Antes de começar, você precisa ter instalado:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Node.js** (versão 18 ou superior recomendada)
+- **npm** ou **yarn**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Verifique as versões:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+node -v
+npm -v
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 📥 Instalação
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clone o repositório:
+
+```bash
+git clone <URL_DO_REPOSITORIO>
 ```
+
+Acesse a pasta do projeto:
+
+```bash
+cd nome-do-projeto
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+ou
+
+```bash
+yarn
+```
+
+---
+
+# ▶️ Rodando o projeto em desenvolvimento
+
+Para iniciar o servidor local:
+
+```bash
+npm run dev
+```
+
+ou
+
+```bash
+yarn dev
+```
+
+Após iniciar, acesse no navegador:
+
+```
+http://localhost:5173
+```
+
+---
+
+# 🏗️ Gerando build para produção
+
+Para gerar a versão otimizada do projeto:
+
+```bash
+npm run build
+```
+
+ou
+
+```bash
+yarn build
+```
+
+Os arquivos finais ficarão na pasta:
+
+```
+/dist
+```
+
+---
+
+# 🔎 Visualizando build localmente
+
+Após gerar o build:
+
+```bash
+npm run preview
+```
+
+ou
+
+```bash
+yarn preview
+```
+
+---
+
+# 🧪 Rodando Testes
+
+Caso o projeto utilize Vitest ou Jest:
+
+```bash
+npm run test
+```
+
+ou
+
+```bash
+yarn test
+```
+
+Para rodar em modo watch:
+
+```bash
+npm run test:watch
+```
+
+---
+
+# 📁 Estrutura do Projeto
+
+```
+src/
+ ├── assets/
+ ├── components/
+ ├── data/
+ ├── pages/
+ ├── types/
+ ├── App.tsx
+ └── main.tsx
+```
+
+---
+
+# 🧹 Lint
+
+Para verificar problemas de código:
+
+```bash
+npm run lint
+```
+
+---
+
+# 🛠️ Scripts Disponíveis
+
+| Comando           | Descrição                          |
+| ----------------- | ---------------------------------- |
+| `npm run dev`     | Inicia servidor de desenvolvimento |
+| `npm run build`   | Gera build de produção             |
+| `npm run preview` | Visualiza build local              |
+| `npm run test`    | Executa testes                     |
+| `npm run lint`    | Executa lint                       |
+
+---
+
+# 📌 Observações
+
+- Certifique-se de que todas as variáveis de ambiente estejam configuradas (caso existam).
+- Caso enfrente problemas, apague a pasta `node_modules` e rode novamente `npm install`.
+
+---
+
+# 👨‍💻 Autor
+
+Desenvolvido por Vinicius Vizza.

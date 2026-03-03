@@ -33,7 +33,7 @@ class ProductCarousel extends Component<Props> {
             <PiCaretLeftBold />
           </button>
 
-          <div className="carousel-content" ref={this.carouselRef}>
+          <div className="carousel-viewport" ref={this.carouselRef}>
             <div className="products-carousel">{children}</div>
           </div>
 

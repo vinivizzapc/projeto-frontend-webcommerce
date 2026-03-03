@@ -1,6 +1,5 @@
 .carousel-section {
-  max-width: 1364px;
-  width: 100%;
+  width: 1364px;
   margin: 0 auto;
 }
 
@@ -8,9 +7,8 @@
   position: relative;
 }
 
-.carousel-content {
-  max-width: 1270px;
-  width: 100%;
+.carousel-viewport {
+  width: 1270px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -18,7 +16,7 @@
 .products-carousel {
   display: flex;
   gap: 18px;
-  padding: 24px 0;
+  padding: 24px 0px;
 }
 
 .products-carousel > * {

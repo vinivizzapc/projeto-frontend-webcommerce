@@ -1,11 +1,18 @@
-.topbar {
-  font-family: "Poppins", sans-serif;
-  display: flex;
+.header-container {
+  height: 32px;
   justify-content: center;
-  gap: 119px;
+  display: flex;
+  align-items: center;
+}
+
+.header-topbar {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  justify-content: space-between;
+  width: 764px;
   font-size: 13px;
   color: gray;
-  height: 32px;
+  height: 20px;
 }
 
 .topbar-item {

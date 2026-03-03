@@ -34,17 +34,19 @@ class ProductShowcase extends Component<Props, State> {
 
     return (
       <section className="product-showcase">
-        <div className="product-showcase-header">
-          <span className="line" />
-          <h2>{title}</h2>
-          <span className="line" />
-        </div>
+        <div className="header">
+          <div className="product-showcase-header">
+            <span className="line" />
+            <h2>{title}</h2>
+            <span className="line" />
+          </div>
 
-        {subtitle && (
-          <a href="#" className="product-showcase-subtitle">
-            {subtitle}
-          </a>
-        )}
+          {subtitle && (
+            <a href="#" className="product-showcase-subtitle">
+              {subtitle}
+            </a>
+          )}
+        </div>
 
         <ProductCarousel>
           {products.map((product) => (

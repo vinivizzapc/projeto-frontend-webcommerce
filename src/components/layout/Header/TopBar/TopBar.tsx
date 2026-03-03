@@ -6,7 +6,7 @@ class TopBar extends Component {
   render() {
     return (
       <div className="header-container">
-        <div className="topbar">
+        <div className="header-topbar">
           <span className="topbar-item">
             <PiShieldCheck />
             <span>

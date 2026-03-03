@@ -1,6 +1,6 @@
 .hero-banner {
   width: 100%;
-  height: 420px;
+  height: 390px;
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
@@ -29,11 +29,12 @@
   flex-direction: column;
   align-items: flex-start;
   color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 
 .hero-content h1 {
   font-size: 48px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
   margin-bottom: 16px;
 }
@@ -46,15 +47,16 @@
 
 .hero-content p strong {
   color: #f7ca11;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .hero-button {
-  background: #f7ca11;
+  font-family: "Poppins", sans-serif;
   height: 50px;
   width: 206px;
   padding: 15px 24px;
   font-size: 16px;
+  background: #f7ca11;
   color: #271c47;
   border-radius: 5px;
   border: none;
