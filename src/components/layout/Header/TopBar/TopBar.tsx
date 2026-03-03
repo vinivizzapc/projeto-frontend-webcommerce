@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { PiShieldCheck, PiTruck, PiCreditCard } from "react-icons/pi";
-import "./TopBar.css";
+import "./TopBar.scss";
 
 class TopBar extends Component {
   render() {

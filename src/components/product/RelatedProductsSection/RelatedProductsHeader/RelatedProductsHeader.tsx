@@ -1,5 +1,5 @@
 import { Component } from "react";
-import "./RelatedProductsHeader.css";
+import "./RelatedProductsHeader.scss";
 
 interface Props {
   activeTab: string;

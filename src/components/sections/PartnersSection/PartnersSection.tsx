@@ -1,6 +1,6 @@
 import { Component } from "react";
 import PartnersImg from "../../../assets/images/partners.jpeg";
-import "./PartnersSection.css";
+import "./PartnersSection.scss";
 
 class PartnersSection extends Component {
   render() {

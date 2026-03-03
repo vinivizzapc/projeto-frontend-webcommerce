@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { PiCrownSimple } from "react-icons/pi";
-import "./NavbarCategorias.css";
+import "./NavbarCategorias.scss";
 
 class NavbarCategorias extends Component {
   render() {

@@ -1,21 +1,28 @@
-.carousel-wrapper {
-  width: 1364px;
+.carousel-section {
+  max-width: 1364px;
+  width: 100%;
   margin: 0 auto;
+}
+
+.carousel-wrapper {
   position: relative;
+}
+
+.carousel-content {
+  max-width: 1270px;
+  width: 100%;
+  margin: 0 auto;
   overflow: hidden;
 }
 
 .products-carousel {
-  width: 1260px;
-  margin: 0 auto;
   display: flex;
-  gap: 16px;
-  padding: 24px 8px;
-  overflow: hidden;
+  gap: 18px;
+  padding: 24px 0;
 }
 
 .products-carousel > * {
-  flex: 0 0 262px;
+  flex: 0 0 304px;
 }
 
 .carousel-arrow {
@@ -37,9 +44,9 @@
 }
 
 .carousel-arrow.left {
-  left: 4px;
+  left: -18px;
 }
 
 .carousel-arrow.right {
-  right: 4px;
+  right: -18px;
 }

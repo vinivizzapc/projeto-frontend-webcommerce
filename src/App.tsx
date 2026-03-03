@@ -1,4 +1,3 @@
-import "./App.css";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import BrandsSection from "./components/sections/BrandsSection";
@@ -10,6 +9,7 @@ import ProductShowcase from "./components/product/ProductShowcase";
 import { getProducts } from "./service/productService";
 import { useEffect, useState } from "react";
 import type { Product } from "./types/product";
+import "./App.scss";
 
 function App() {
   const [products, setProducts] = useState<Product[]>([]);

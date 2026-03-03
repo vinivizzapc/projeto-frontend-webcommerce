@@ -1,6 +1,6 @@
 import { Component } from "react";
 import BrandLogo from "../../../assets/images/logo.png";
-import "./BrandsSection.css";
+import "./BrandsSection.scss";
 
 class BrandsSection extends Component {
   render() {

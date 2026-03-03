@@ -1,5 +1,5 @@
 import { Component } from "react";
-import "./ProductCard.css";
+import "./ProductCard.scss";
 import type { Product } from "../../../types/product";
 
 interface Props {
@@ -8,8 +8,13 @@ interface Props {
 }
 
 class ProductCard extends Component<Props> {
-  render() {
+  handleClick = () => {
     const { product, onBuy } = this.props;
+    onBuy(product);
+  };
+
+  render() {
+    const { product } = this.props;
 
     if (!product) return null;
 
@@ -19,7 +24,12 @@ class ProductCard extends Component<Props> {
     });
 
     return (
-      <div className="product-card">
+      <div
+        className="product-card"
+        onClick={this.handleClick}
+        role="button"
+        tabIndex={0}
+      >
         <img
           src={product.photo}
           alt={product.productName}
@@ -32,7 +42,13 @@ class ProductCard extends Component<Props> {
 
         <span className="free-shipping">Frete grátis</span>
 
-        <button className="buy-button" onClick={() => onBuy(product)}>
+        <button
+          className="buy-button"
+          onClick={(e) => {
+            e.stopPropagation();
+            this.handleClick();
+          }}
+        >
           COMPRAR
         </button>
       </div>

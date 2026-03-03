@@ -1,6 +1,6 @@
 import { Component, createRef } from "react";
 import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi";
-import "./ProductCarousel.css";
+import "./ProductCarousel.scss";
 
 interface Props {
   children: React.ReactNode;
@@ -27,14 +27,14 @@ class ProductCarousel extends Component<Props> {
     const { children } = this.props;
 
     return (
-      <section className="related-section">
+      <section className="carousel-section">
         <div className="carousel-wrapper">
           <button className="carousel-arrow left" onClick={this.scrollLeft}>
             <PiCaretLeftBold />
           </button>
 
-          <div className="products-carousel" ref={this.carouselRef}>
-            {children}
+          <div className="carousel-content" ref={this.carouselRef}>
+            <div className="products-carousel">{children}</div>
           </div>
 
           <button className="carousel-arrow right" onClick={this.scrollRight}>

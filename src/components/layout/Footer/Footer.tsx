@@ -7,7 +7,7 @@ import {
   PiLinkedinLogo,
 } from "react-icons/pi";
 
-import "./Footer.css";
+import "./Footer.scss";
 
 class Footer extends Component {
   render() {

@@ -1,5 +1,5 @@
 import { Component } from "react";
-import "./HeroBanner.css";
+import "./HeroBanner.scss";
 import heroImage from "../../../assets/images/hero-image.jpeg";
 
 class HeroBanner extends Component {

@@ -7,7 +7,7 @@ import SaudeIcon from "../../../assets/images/categories/saude.png";
 import EsporteIcon from "../../../assets/images/categories/esporteFitness.png";
 import ModaIcon from "../../../assets/images/categories/moda.png";
 
-import "./CategoriesSection.css";
+import "./CategoriesSection.scss";
 
 class CategoriesSection extends Component {
   render() {

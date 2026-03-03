@@ -1,5 +1,5 @@
 import { Component } from "react";
-import "./ProductShowcase.css";
+import "./ProductShowcase.scss";
 import ProductCarousel from "../ProductCarousel";
 import ProductCard from "../ProductCard";
 import type { Product } from "../../../types/product";

@@ -3,7 +3,7 @@ import { FiSearch } from "react-icons/fi";
 import { PiUserCircle, PiShoppingCart, PiHeart } from "react-icons/pi";
 import OrdersIcon from "/src/assets/icons/orders.svg";
 import logo from "../../../../assets/images/logo.png";
-import "./MainHeader.css";
+import "./MainHeader.scss";
 
 class MainHeader extends Component {
   render() {

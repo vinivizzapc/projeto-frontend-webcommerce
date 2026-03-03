@@ -3,7 +3,8 @@ import RelatedProductsHeader from "./RelatedProductsHeader";
 import ProductCarousel from "../../product/ProductCarousel";
 import ProductCard from "../../product/ProductCard";
 import type { Product } from "../../../types/product";
-import "./RelatedProductsSection.css";
+import "./RelatedProductsSection.scss";
+import Popup from "../../ui/Popup";
 
 interface Props {
   products: Product[];
@@ -11,11 +12,21 @@ interface Props {
 
 interface State {
   activeTab: string;
+  selectedProduct: Product | null;
 }
 
 class RelatedProductsSection extends Component<Props, State> {
-  state = {
+  state: State = {
     activeTab: "CELULAR",
+    selectedProduct: null,
+  };
+
+  handleBuy = (product: Product) => {
+    this.setState({ selectedProduct: product });
+  };
+
+  closePopup = () => {
+    this.setState({ selectedProduct: null });
   };
 
   handleChangeTab = (tab: string) => {
@@ -24,7 +35,7 @@ class RelatedProductsSection extends Component<Props, State> {
 
   render() {
     const { products } = this.props;
-    const { activeTab } = this.state;
+    const { activeTab, selectedProduct } = this.state;
 
     return (
       <section className="related-section">
@@ -35,9 +46,26 @@ class RelatedProductsSection extends Component<Props, State> {
 
         <ProductCarousel>
           {products.map((product) => (
-            <ProductCard key={product.productName} product={product} />
+            <ProductCard
+              key={product.productName}
+              product={product}
+              onBuy={this.handleBuy}
+            />
           ))}
         </ProductCarousel>
+
+        {selectedProduct && (
+          <Popup
+            isOpen={true}
+            onClose={this.closePopup}
+            title={selectedProduct.productName}
+            price={(selectedProduct.price / 100).toLocaleString("pt-BR", {
+              style: "currency",
+              currency: "BRL",
+            })}
+            image={selectedProduct.photo}
+          />
+        )}
       </section>
     );
   }
