@@ -36,8 +36,7 @@
 
 .partner-overlay h3 {
   font-size: 40px;
-  font-weight: 700;
-  line-height: 1.2;
+  font-weight: bold;
   margin: 0;
 }
 
@@ -45,20 +44,21 @@
   margin: 0;
   font-size: 16px;
   margin-bottom: 16px;
-  width: 170.92px;
+  width: 199.92px;
   color: #ffffff;
+  font-weight: 300;
 }
 
 .partner-overlay button {
   max-width: 144.69px;
   min-height: 48px;
-  font-family: "Poppins", sans-serif;
+
   font-size: 16px;
   letter-spacing: 8%;
   border-radius: 6px;
   background: #f7ca11;
   color: #271c47;
   border: none;
-  font-weight: 600;
+  font-weight: bold;
   cursor: pointer;
 }

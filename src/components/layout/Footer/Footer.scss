@@ -1,7 +1,6 @@
 .footer {
   width: 1440px;
   margin-top: 80px;
-  font-family: "Poppins", sans-serif;
 }
 
 .newsletter {
@@ -79,7 +78,8 @@
   line-height: 12px;
   letter-spacing: 0%;
   color: #161615;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 14px;
   cursor: pointer;
 }
 
@@ -162,8 +162,9 @@
 }
 
 .footer-column h4 {
+  color: #222222;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: bold;
   margin-bottom: 12px;
   opacity: 71%;
 }
@@ -187,7 +188,8 @@
   align-items: center;
 }
 
-.footer-bottom p {
+.footer-bottom {
+  font-weight: normal;
   max-width: 1441px;
   font-size: 13px;
   color: #3f3f40;

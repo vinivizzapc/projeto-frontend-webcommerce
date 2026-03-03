@@ -1,6 +1,5 @@
 .main-header {
   width: 100%;
-  font-family: "Poppins", sans-serif;
 }
 
 .main-header .header-container {
@@ -51,6 +50,7 @@
 .search-wrapper input::placeholder {
   color: #9f9f9f;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .search-button {

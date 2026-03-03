@@ -7,7 +7,7 @@
 
 .header-topbar {
   display: flex;
-  font-family: "Poppins", sans-serif;
+
   justify-content: space-between;
   width: 764px;
   font-size: 13px;
@@ -29,10 +29,5 @@
 
 .topbar-item strong {
   color: #3019b2;
-  font-weight: 500;
-}
-
-strong {
-  color: #3019b2;
-  font-weight: 500;
+  font-weight: 600;
 }

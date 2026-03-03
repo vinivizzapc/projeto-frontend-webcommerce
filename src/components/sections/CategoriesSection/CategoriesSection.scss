@@ -16,13 +16,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 22px;
 }
 
 .category-box {
   width: 128px;
   height: 128px;
-  background: #f8f8f8;
+  background: #f4f4f4;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -37,7 +37,6 @@
 }
 
 .category-label {
-  font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: #4e4e4e;
   font-weight: 500;
@@ -45,7 +44,7 @@
 }
 
 .category-item.active .category-box {
-  background: #f4f4f4;
+  background: #ffffff;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
@@ -55,7 +54,7 @@
 }
 
 .category-item:hover .category-box {
-  background: #f4f4f4;
+  background: #ffffff;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   cursor: pointer;
 }
