@@ -9,7 +9,7 @@ Este projeto é uma aplicação front-end desenvolvida com **React**, **TypeScri
 - React
 - TypeScript
 - Vite
-- CSS Modules / CSS puro
+- SCSS (Sass)
 - ESLint
 
 ---
